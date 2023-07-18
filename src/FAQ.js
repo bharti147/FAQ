@@ -7,14 +7,15 @@ class FAQ extends Component(){
   
   
   render() {
-    const { question } = this.props;
+    const  question  = this.props;
     
     return (
       <div className='FAQ'>
         <h2>Frequently Asked Questions</h2>
-        {question.map(val=>{
-          console.log(val.ques)
-        })}
+        {/* {question.map(val=>{
+          console.log(val)
+        })} */}
+        {console.log(question)}
        {/* <Block question={question}/>
       */}
       </div>

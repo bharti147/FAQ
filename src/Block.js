@@ -6,7 +6,7 @@ class Block extends Component() {
     return (
       <div className='quesBlock'>
       {/* <h3>Is this a good product?</h3> */}
-      <h3>ol</h3>
+      {/* <h3></h3> */}
       
       </div>
     )
