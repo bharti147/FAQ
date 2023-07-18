@@ -1,0 +1,9 @@
+.quesBlock{
+    height: 10%;
+    width: 90%;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid white;
+    margin: 10px auto;
+    border-radius: 10px;
+}

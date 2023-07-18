@@ -1,0 +1,12 @@
+.FAQ{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(92, 111, 111);
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+}
+ h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
