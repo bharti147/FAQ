@@ -1,0 +1,22 @@
+.newQues{
+    
+        height: 10%;
+        width: 50%;
+        background-color: rgb(92, 111, 111);
+        border-radius: 20px;
+        color: white;
+        padding: 20px;
+ 
+    
+}
+.newQues input{
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+input:focus {
+    background-color: rgb(209, 218, 221);
+   
+  }

@@ -1,9 +1,18 @@
 .quesBlock{
-    height: 10%;
+    height: auto;
     width: 90%;
     background-color: whitesmoke;
     color: black;
     border: 1px solid white;
     margin: 10px auto;
     border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    
+}
+h3{
+    color: rgb(88, 85, 85);
+    line-height: normal;
+    line-break: auto;
+    
+  
 }

@@ -2,25 +2,26 @@ import React, { Component } from 'react'
 import './Faq.css'
 import Block from './Block'
 
-class FAQ extends Component(){
+class FAQ extends Component{
  
   
   
   render() {
-    const  question  = this.props;
+  const {quest} = this.props;
     
     return (
       <div className='FAQ'>
-        <h2>Frequently Asked Questions</h2>
-        {/* {question.map(val=>{
-          console.log(val)
-        })} */}
-        {console.log(question)}
-       {/* <Block question={question}/>
-      */}
+      <h2>Frequently Asked Questions</h2>
+    {quest.map(val=>{
+      return(
+        <Block quest={val.ques} key={val.id}/>
+      )
+    })}
+      
+       
       </div>
     )
   }
 }
 
-export default FAQ
+export default FAQ;

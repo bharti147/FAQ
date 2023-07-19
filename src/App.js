@@ -33,6 +33,7 @@
 // export default App;
 import FAQ from './FAQ';
 import './App.css';
+import NewQuestion from './NewQuestion';
 
 import React, { Component } from 'react'
 
@@ -42,7 +43,8 @@ import React, { Component } from 'react'
 
           {
             'id':'1',
-            'ques':"what is the duration of this course?"
+            'ques':"what is the duration of this course what is the duration of this course? what is the duration of this course?"
+                    
           },
           {
             'id':'2',
@@ -54,8 +56,13 @@ import React, { Component } from 'react'
           }
         ];
     return (
-      <div>
-         <FAQ question={questions}/>
+      <div className="App">
+     <NewQuestion/>
+     <br/>
+     <br/>
+         <FAQ quest={questions}/>
+        
+
         
       </div>
     )
