@@ -8,6 +8,7 @@ class FAQ extends Component{
   
   render() {
   const {quest} = this.props;
+  const {newQues} = this.props;
     
     return (
       <div className='FAQ'>
@@ -17,7 +18,8 @@ class FAQ extends Component{
         <Block quest={val.ques} key={val.id}/>
       )
     })}
-      
+    
+
        
       </div>
     )

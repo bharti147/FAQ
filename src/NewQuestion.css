@@ -6,11 +6,12 @@
         border-radius: 20px;
         color: white;
         padding: 20px;
+        box-sizing: border-box;
  
     
 }
 .newQues input{
-  width: 90%;
+  width: 91%;
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -19,4 +20,12 @@
 input:focus {
     background-color: rgb(209, 218, 221);
    
+  }
+  span i{
+    /* margin: 10px 10px 10px 30px; */
+    /* font-size: 18px;
+  font-weight: bold; */
+  cursor: pointer;
+
+    
   }
