@@ -1,36 +1,3 @@
-// import FAQ from './FAQ';
-// import './App.css';
-
-
-// function App() {
-//   const questions=[
-
-//     {
-//       'id':'1',
-//       'ques':"what is the duration of this course?"
-//     },
-//     {
-//       'id':'2',
-//       'ques':"what is the duration of this course?"
-//     },
-//     {
-//       'id':'3',
-//       'ques':"what is the duration of this course?"
-//     }
-//   ];
-//   return (
-    
-//     <div className="App">
-     
-        
-//           <FAQ question={questions}/>
-        
-        
-//     </div>
-//   );
-// }
-
-// export default App;
 import FAQ from './FAQ';
 import './App.css';
 import NewQuestion from './NewQuestion';
@@ -38,26 +5,38 @@ import NewQuestion from './NewQuestion';
 import React, { Component } from 'react'
 
  class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      questions: [
+        {
+          id: '1',
+          ques: "what is the duration of this course?",
+          answer: "10 months"
+        },
+        // Additional questions go here
+      ],
+    };
+  }
+           submitHandler=(ques)=>{
+         
+         this.setState((prevState) => ({
+          questions: [...prevState.questions,ques],
+         }));
+          
+        }
+        // handleAddQuestion = (newQuestion) => {
+        //   this.setState((prevState) => ({
+        //     questions: [...prevState.questions, newQuestion],
+        //   }));
+        // };
   render() {
-    const questions=[
+    
+    const { questions } = this.state;
 
-          {
-            'id':'1',
-            'ques':"what is the duration of this course what is the duration of this course? what is the duration of this course?"
-                    
-          },
-          {
-            'id':'2',
-            'ques':"what is the duration of this course?"
-          },
-          {
-            'id':'3',
-            'ques':"what is the duration of this course?"
-          }
-        ];
     return (
       <div className="App">
-     <NewQuestion/>
+     <NewQuestion onSave={this.submitHandler}/>
      <br/>
      <br/>
          <FAQ quest={questions}/>
@@ -70,4 +49,45 @@ import React, { Component } from 'react'
 }
 
 export default App
+
+
+// import React, { Component } from 'react';
+// import FAQ from './FAQ';
+// import NewQuestion from './NewQuestion';
+
+// class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       questions: [
+//         {
+//           id: '1',
+//           ques: "what is the duration of this course?",
+//         },
+//         // Additional questions go here
+//       ],
+//     };
+//   }
+
+//   handleAddQuestion = (newQuestion) => {
+//     this.setState((prevState) => ({
+//       questions: [...prevState.questions, newQuestion],
+//     }));
+//   };
+
+//   render() {
+//     const { questions } = this.state;
+
+//     return (
+//       <div className="App">
+//         <FAQ quest={questions} />
+//         <br />
+//         <br />
+//         <NewQuestion onAddQuestion={this.handleAddQuestion} />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
 
